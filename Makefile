@@ -50,7 +50,7 @@ startup_stm32f103xe.s
 #######################################
 # binaries
 #######################################
-PREFIX = home/ubuntu/hoverbase/bin/arm-none-eabi-
+PREFIX = /home/ubuntu/hoverbase/bin/arm-none-eabi-
 CC = $(PREFIX)gcc
 AS = $(PREFIX)gcc -x assembler-with-cpp
 CP = $(PREFIX)objcopy
