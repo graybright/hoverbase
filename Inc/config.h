@@ -26,7 +26,7 @@
 
 //#define DEBUG_I2C_LCD               // standard 16x2 or larger text-lcd via i2c-converter on right sensor board cable
 
-//#define TIMEOUT          5          // number of wrong / missing commands before emergency off
+#define TIMEOUT          5          // number of wrong / missing commands before emergency off
 
 // ################################################################################
 
