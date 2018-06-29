@@ -14,11 +14,11 @@
 
 // ################################################################################
 
-//#define DEBUG_SERIAL_USART2         // left sensor board cable, disable if ADC or PPM is used!
+#define DEBUG_SERIAL_USART2         // left sensor board cable, disable if ADC or PPM is used!
 //#define DEBUG_SERIAL_USART3         // right sensor board cable, disable if I2C (nunchuck) is used!
-//#define DEBUG_BAUD       115200     // UART baud rate
+#define DEBUG_BAUD       115200     // UART baud rate
 //#define DEBUG_SERIAL_SERVOTERM
-//#define DEBUG_SERIAL_ASCII          // human readable output. i.e. "345;1337;0;0\n\r"
+#define DEBUG_SERIAL_ASCII          // human readable output. i.e. "345;1337;0;0\n\r"
 
 //#define CONTROL_SERIAL_USART2
 //#define CONTROL_BAUD       19200     // control via usart from eg an Arduino or raspberry
