@@ -59,20 +59,20 @@
 // - speedR and speedL: normal driving -1000 to 1000
 // - weakr and weakl: field weakening for extra boost at high speed (speedR > 700 and speedL > 700). 0 to ~400
 
-#define FILTER              1  // lower value == softer filter. do not use values <0.01, you will get float precision issues.
+#define FILTER              0.1  // lower value == softer filter. do not use values <0.01, you will get float precision issues.
 #define SPEED_COEFFICIENT   0.5  // higher value == stronger. 0.0 to 1.0
 #define STEER_COEFFICIENT   0.5  // higher value == stronger. if you do not want any steering, set it to 0.0; 0.0 to 1.0
-//#define INVERT_R_DIRECTION
+#define INVERT_R_DIRECTION
 //#define INVERT_L_DIRECTION
 
 //Turbo boost at high speeds while button1 is pressed:
 //#define ADDITIONAL_CODE \
-if (button1 && speedR > 700) { /* field weakening at high speeds */ \
-  weakl = cmd1 - 700; /* weak should never exceed 400 or 450 MAX!! */ \
-  weakr = cmd1 - 700; } \
-else { \
-  weakl = 0; \
-  weakr = 0; }
+//if (button1 && speedR > 700) { /* field weakening at high speeds */ \
+//  weakl = cmd1 - 700; /* weak should never exceed 400 or 450 MAX!! */ \
+//  weakr = cmd1 - 700; } \
+//else { \
+//  weakl = 0; \
+//  weakr = 0; }
 
 // ###### BOBBYCAR ######
 // #define FILTER              0.1
@@ -80,17 +80,17 @@ else { \
 // #define STEER_COEFFICIENT   0
 
 // #define ADDITIONAL_CODE \
-if (button1 && speedR < 300) { /* drive backwards */ \
-  speedR = speedR * -0.2f;   \
-  speedL = speedL * -0.2f; } \
-else { \
-  direction = 1; } \
-if (button1 && speedR > 700) { /* field weakening at high speeds */ \
-  weakl = speedR - 600; /* weak should never exceed 400 or 450 MAX!! */ \
-  weakr = speedR - 600; } \
-else { \
-  weakl = 0; \
-  weakr = 0; }
+//if (button1 && speedR < 300) { /* drive backwards */ \
+//  speedR = speedR * -0.2f;   \
+//  speedL = speedL * -0.2f; } \
+//else { \
+//  direction = 1; } \
+//if (button1 && speedR > 700) { /* field weakening at high speeds */ \
+ // weakl = speedR - 600; /* weak should never exceed 400 or 450 MAX!! */ \
+//  weakr = speedR - 600; } \
+//else { \
+//  weakl = 0; \
+//  weakr = 0; }
 
 // ###### ARMCHAIR ######
 // #define FILTER              0.05
