@@ -14,8 +14,8 @@
 
 // ################################################################################
 
-#define DEBUG_SERIAL_USART2         // left sensor board cable, disable if ADC or PPM is used!
-//#define DEBUG_SERIAL_USART3         // right sensor board cable, disable if I2C (nunchuck) is used!
+//#define DEBUG_SERIAL_USART2         // left sensor board cable, disable if ADC or PPM is used!
+#define DEBUG_SERIAL_USART3         // right sensor board cable, disable if I2C (nunchuck) is used!
 #define DEBUG_BAUD       115200     // UART baud rate
 //#define DEBUG_SERIAL_SERVOTERM
 #define DEBUG_SERIAL_ASCII          // human readable output. i.e. "345;1337;0;0\n\r"
@@ -37,15 +37,15 @@
 
 // ###### CONTROL VIA TWO POTENTIOMETERS ######
 // ADC-calibration to cover the full poti-range: connect potis to left sensor board cable (0 to 3.3V), watch UART on the right sensor board cable. the first 2 values are ADC1 and ADC2. write minimum and maximum poti position-values to ADC?_MIN and ADC?_MAX.
-//#define CONTROL_ADC                 // use ADC as input. disable DEBUG_SERIAL_USART2!
-//#define ADC1_MIN 0                  // min ADC1-value while poti at minimum-position (0 - 4095)
-//#define ADC1_MAX 4095               // max ADC1-value while poti at maximum-position (0 - 4095)
-//#define ADC2_MIN 0                  // min ADC2-value while poti at minimum-position (0 - 4095)
-//#define ADC2_MAX 4095               // max ADC2-value while poti at maximum-position (0 - 4095)
+#define CONTROL_ADC                 // use ADC as input. disable DEBUG_SERIAL_USART2!
+#define ADC1_MIN 0                  // min ADC1-value while poti at minimum-position (0 - 4095)
+#define ADC1_MAX 4095               // max ADC1-value while poti at maximum-position (0 - 4095)
+#define ADC2_MIN 0                  // min ADC2-value while poti at minimum-position (0 - 4095)
+#define ADC2_MAX 4095               // max ADC2-value while poti at maximum-position (0 - 4095)
 
 // ###### CONTROL VIA NINTENDO NUNCHUCK ######
 // left sensor board cable. keep cable short, use shielded cable, use ferrits, stabalize voltage in nunchuck, use the right one of the 2 types of nunchucks, add i2c pullups.
-#define CONTROL_NUNCHUCK            // use nunchuck as input. disable DEBUG_SERIAL_USART3!
+//#define CONTROL_NUNCHUCK            // use nunchuck as input. disable DEBUG_SERIAL_USART3!
 
 // ################################################################################
 
