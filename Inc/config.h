@@ -40,7 +40,7 @@
 #define CONTROL_ADC                 // use ADC as input. disable DEBUG_SERIAL_USART2!
 #define ADC1_MIN 300                  // min ADC1-value while poti at minimum-position (0 - 4095)
 #define ADC1_MAX 4095               // max ADC1-value while poti at maximum-position (0 - 4095)
-#define ADC2_MIN 300                  // min ADC2-value while poti at minimum-position (0 - 4095)
+#define ADC2_MIN 3000                  // min ADC2-value while poti at minimum-position (0 - 4095)
 #define ADC2_MAX 4095               // max ADC2-value while poti at maximum-position (0 - 4095)
 
 // ###### CONTROL VIA NINTENDO NUNCHUCK ######
