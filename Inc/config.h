@@ -38,9 +38,9 @@
 // ###### CONTROL VIA TWO POTENTIOMETERS ######
 // ADC-calibration to cover the full poti-range: connect potis to left sensor board cable (0 to 3.3V), watch UART on the right sensor board cable. the first 2 values are ADC1 and ADC2. write minimum and maximum poti position-values to ADC?_MIN and ADC?_MAX.
 #define CONTROL_ADC                 // use ADC as input. disable DEBUG_SERIAL_USART2!
-#define ADC1_MIN 500                  // min ADC1-value while poti at minimum-position (0 - 4095)
+#define ADC1_MIN 0                  // min ADC1-value while poti at minimum-position (0 - 4095)
 #define ADC1_MAX 2400               // max ADC1-value while poti at maximum-position (0 - 4095)
-#define ADC2_MIN 500                  // min ADC2-value while poti at minimum-position (0 - 4095)
+#define ADC2_MIN 0                  // min ADC2-value while poti at minimum-position (0 - 4095)
 #define ADC2_MAX 2400               // max ADC2-value while poti at maximum-position (0 - 4095)
 
 // ###### CONTROL VIA NINTENDO NUNCHUCK ######
